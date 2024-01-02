@@ -1,0 +1,204 @@
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  .project {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+  }
+  
+  .project-top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .project-header {
+    flex: 1;
+    font-size: 1.8vw;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  
+  .project-repo-button {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    color: var(--color-yellow);
+  }
+  
+  .project-repo-button-text {
+    font-size: 1.5vw;
+    margin-left: 10px;
+  }
+  
+  .project-text-section {
+    text-align: justify;
+    font-size: 1.2vw;
+    margin-bottom: 0.5em;
+  }
+  
+  .project-paragraphs {
+    display: flex;
+    margin-top: 0.5em;
+  }
+  
+  .project-gifs-section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  .project-gif {
+    position: relative;
+    height: 15vw;
+    width: 22.5vw;
+    transition: transform 0.5s ease;
+    transform-origin: bottom left;
+    z-index: 0;
+  }
+  
+  .project-gif:hover {
+    transform: scale(1.5);
+    transform-origin: bottom left;
+    z-index: 1;
+  }
+  
+  .project-gif img {
+    max-width: 100%;
+    border: 5px solid;
+    border-radius: 25px;
+  }
+  
+  .project-gif-label {
+    position: absolute;
+    bottom: -0.5em;
+    right: 1em;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 0px 2px 0px 2px;
+    font-size: 1vw;
+    border-radius: 2px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .project-bottom-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    font-size: 1vw;
+  }
+  
+  .project-technologies {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+  }
+  
+  .project-technologies-header {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  
+  .project-technologies-text-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project-technologies-text {
+    margin-right: 1.5em;
+  }
+  
+  .project-zoom-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--color-yellow);
+  }
+  
+  .project-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .project-button-1,
+  .project-button-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: color 0.15s;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    margin: 0.5em;
+    padding: 0.2em;
+  }
+  
+  .project-button-1:hover,
+  .project-button-2:hover {
+    color: var(--color-purple);
+    border-color: var(--color-purple);
+  }
+  
+  .project-button-icon {
+    margin-bottom: 1em;
+  }
+  
+  .project-button-text {
+    font-size: 1em;
+  }
+  
+  /* Responsive Web Design Code */
+  
+  @media (max-width: 640px) {
+    .project-header {
+      font-size: 2.5vw;
+    }
+  
+    .project-text-section,
+    .project-technologies,
+    .project-bottom-section,
+    .project-zoom-info{
+      font-size: 2vw;
+    }
+  
+    .repo-icon {
+      font-size: 0.8em;
+    }
+  
+    .project-gifs-section {
+      flex-direction: column;
+    }
+  
+    .project-gif {
+      height: 30vw;
+      width: 45vw;
+      margin-bottom: 1em;
+    }
+  
+    .project-bottom-section {
+      width: 100%;
+      flex-flow: column-reverse;
+    }
+  
+    .project-zoom-info {
+      margin-left: 3em;
+      margin-bottom: 1em;
+    }
+  
+    .project-buttons {
+      height: 40vh;
+    }
+  }

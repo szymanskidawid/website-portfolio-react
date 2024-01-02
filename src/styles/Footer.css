@@ -1,0 +1,40 @@
+footer {
+    margin-top: 1.5em;
+    border-top: 3px solid var(--color-white);
+    font-size: 1vw;
+  }
+  
+  .footer-section {
+    display: grid;
+    row-gap: 1em;
+  }
+  
+  .footer-contacts {
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0.2em;
+    margin-top: 1em;
+    margin-left: 3em;
+  }
+  
+  .footer-contacts-mail,
+  .footer-contacts-github,
+  .footer-contacts-linkedin {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  
+  .footer-btns {
+    margin-right: 1em;
+  }
+  
+  .footer-copyright {
+    margin-bottom: 3em;
+  }
+  
+  /* Responsive Web Design Code */
+  
+  @media (max-width: 640px) {
+    footer {
+      font-size: 2vw;
+    }
+  }

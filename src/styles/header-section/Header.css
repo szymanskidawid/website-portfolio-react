@@ -1,0 +1,78 @@
+.nav-bar {
+    background-color: var(--color-black);
+    border-bottom: 3px solid var(--color-white);
+    color: var(--color-white);
+    font-size: 1.5vw;
+    font-weight: 700;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .language-buttons {
+    display: flex;
+    margin-right: auto;
+  }
+  
+  .polish-language-button,
+  .english-language-button {
+    width: 3.5vw;
+    align-items: center;
+    margin-left: 2em;
+    padding: 0.4em 0.5em 0em 0.5em;
+  }
+  
+  .language-buttons img {
+    width: 80%;
+    border: 1px solid var(--color-black);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .language-buttons .inactive img {
+    filter: grayscale(100%);
+  }
+  
+  .nav-bar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-button,
+  .resume-button,
+  .projects-button,
+  .color-mode-button,
+  .top-button {
+    margin: 0.5em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+  }
+  
+  .color-mode-button {
+    width: 2.5vw;
+    text-align: center;
+  }
+  
+  .top-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-button-text {
+    padding-left: 0.5em;
+    font-size: 1.5vw;
+  }
+  
+  /* Responsive Web Design Code */
+  
+  @media (max-width: 640px) {
+    .about-button,
+    .resume-button,
+    .projects-button,
+    .color-mode-button,
+    .top-button-text {
+      font-size: 2.5vw;
+    }
+  }

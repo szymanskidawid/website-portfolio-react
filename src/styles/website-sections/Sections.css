@@ -1,0 +1,48 @@
+.page-sections {
+    width: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  .welcome-section {
+    min-height: 100vh;
+  }
+  
+  .about-section,
+  .resume-section,
+  .projects-section {
+    min-height: 75vh;
+    background-color: var(--color-dark-gray);
+    border-radius: 10px;
+  }
+  
+  .section-headers {
+    display: inline-block;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 3vw;
+    font-weight: 700;
+    border-top: 5px solid var(--color-yellow);
+    border-bottom: 5px solid var(--color-yellow);
+  }
+  
+  /* Responsive Web Design Code */
+  
+  @media (max-width: 640px){
+    .welcome-section {
+      min-height: 100vh;
+    }
+  
+    .about-section,
+    .resume-section,
+    .projects-section {
+      min-height: 90vh;
+    }
+    
+    .section-headers {
+      font-size: 3.5vw;
+      border-width: 3px;
+      margin-top: 0.7em;
+      margin-bottom: 0.7em;
+    }
+  }
