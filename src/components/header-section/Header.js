@@ -1,9 +1,13 @@
 import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
+import { useContext } from 'react'
+import { LightModeContext } from '../contexts/LightModeContext';
 
 const Header = () => {
+  const { lightMode, setLightMode } = useContext(LightModeContext);
+
   return (
-    <header class="nav-bar">
+    <header class={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div class="language-buttons">
         <div class="all-btns english-language-button">
           <img src={FlagUK} class="fa-beat" />
@@ -30,7 +34,7 @@ const Header = () => {
         <div class="all-btns projects-button lang-toggle" data-key="projectsBtn">
           Projects
         </div>
-        <div class="all-btns color-mode-button">
+        <div class="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
           <i class="icon-change fa fa-sun fa-beat"></i>
         </div>
       </nav>  

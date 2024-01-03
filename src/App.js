@@ -1,14 +1,28 @@
 import Header from './components/header-section/Header'
 import Sections from './components/sections/Sections';
 import Footer from './components/Footer';
+import { useState, useEffect } from 'react';
+import ContextProviders from './components/contexts/ContextProviders';
 
 function App() {
+  const [lightMode, setLightMode] = useState(false);
+
+  useEffect(() => {
+    if (lightMode) {
+      document.body.classList.add("light-mode-body");
+    } else {
+      document.body.classList.remove("light-mode-body");
+    }
+  })
+
   return (
-    <>
-      <Header />
-      <Sections />
-      <Footer />
-    </>
+    <div className='App'>
+      <ContextProviders {...{ lightMode, setLightMode }}>
+        <Header />
+        <Sections />
+        <Footer />
+      </ContextProviders>
+    </div>
   );
 }
 

@@ -1,6 +1,11 @@
+import { useContext } from 'react'
+import { LightModeContext } from './contexts/LightModeContext';
+
 const Footer = () => {
+  const { lightMode } = useContext(LightModeContext);
+
   return (
-    <footer class="footer-section"> 
+    <footer class={`footer-section ${lightMode && 'light-mode-footer'}`}> 
       <div class="footer-contacts">
         <div class="footer-contacts-mail">
           <div class="footer-btns">

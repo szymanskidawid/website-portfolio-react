@@ -1,4 +1,6 @@
 import SectionHeaders from "./SectionHeaders"
+import { useContext } from 'react'
+import { LightModeContext } from '../contexts/LightModeContext';
 
 import Project1_GIF_1 from '../../assets/gifs/project1-1.gif'
 import Project1_GIF_2 from '../../assets/gifs/project1-2.gif'
@@ -7,17 +9,19 @@ import Project2_GIF_1 from '../../assets/gifs/project2-1.gif'
 import Project2_GIF_2 from '../../assets/gifs/project2-2.gif'
 import Project2_GIF_3 from '../../assets/gifs/project2-3.gif'
 
-const ProjectsSection = () => {
+const ProjectsSection = ( {className} ) => {
+  const { lightMode } = useContext(LightModeContext);
+
   return (
     <>
       <SectionHeaders text="Projects" />
-      <section class="section projects-section">
+      <section class={`section projects-section ${lightMode && "light-mode-sections"}`}>
         <div id="project-1" class="project">
           <div class="project-top-section">
             <h2 class="project-header text-underline lang-toggle" data-key="project1Header">
               Portfolio Website
             </h2>
-            <div id="repo-btn-1" class="all-btns project-repo-button">
+            <div id="repo-btn-1" class={`all-btns project-repo-button ${lightMode && "light-mode-cv-link"}`}>
               <i class="repo-icon fa-brands fa-github fa-xl"></i>
               <p class="project-repo-button-text">GitHub Repo</p>
             </div>
@@ -71,7 +75,7 @@ const ProjectsSection = () => {
                 <p class="project-technologies-text">JSON</p>
               </div>
             </div>
-            <div class="project-zoom-info lang-toggle" data-key="projectHoverInfo">
+            <div class={`project-zoom-info lang-toggle ${lightMode && "light-mode-cv-link"}`} data-key="projectHoverInfo">
               <p>Hover over GIFs for zoom.</p>
             </div> 
           </div>

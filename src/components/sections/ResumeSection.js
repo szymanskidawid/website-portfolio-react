@@ -1,17 +1,21 @@
 import SectionHeaders from "./SectionHeaders"
+import { useContext } from 'react'
+import { LightModeContext } from '../contexts/LightModeContext';
 
 import cvENG from '../../assets/cv-files/Dawid-Szymanski-CV-ENG.pdf'
 import cvPL from '../../assets/cv-files/Dawid-Szymanski-CV-PL.pdf'
 
-const ResumeSection = () => {
+const ResumeSection = ( {className} ) => {
+  const { lightMode } = useContext(LightModeContext);
+
   return (
     <>
       <SectionHeaders text="Resume" />
-      <section class="section resume-section">
+      <section class={`section resume-section ${lightMode && "light-mode-sections"}`}>
       <div id="resume-eng" class="resume-section-left">
         <object class="resume-cv-container" data={cvENG} type="application/pdf" aria-label="CV" />
         <a href={cvENG} style={{textDecoration: "none"}} target="_blank">
-          <p class="resume-cv-link">
+          <p class={`resume-cv-link ${lightMode && "light-mode-cv-link"}`}>
             Click to open my CV in a new window (English version).
           </p>
         </a>

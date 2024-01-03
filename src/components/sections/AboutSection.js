@@ -1,10 +1,14 @@
 import SectionHeaders from "./SectionHeaders"
+import { useContext } from 'react'
+import { LightModeContext } from '../contexts/LightModeContext';
 
-const AboutSection = () => {
+const AboutSection = ( {className} ) => {
+  const { lightMode } = useContext(LightModeContext);
+
   return (
     <>
       <SectionHeaders text="About Me" />
-      <section class="section about-section">
+      <section class={`section about-section ${lightMode && "light-mode-sections"}`}>
         <p class="about-section-text lang-toggle" data-key="aboutMeText1">
           I am a 26 year old curently living and working in <span class="text-highlights">Warsaw</span>, 
           together with my girlfriend and two dogs.  
