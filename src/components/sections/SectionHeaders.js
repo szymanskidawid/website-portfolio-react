@@ -5,7 +5,7 @@ const SectionHeaders = ({ text }) => {
   const { lightMode } = useContext(LightModeContext);
 
   return (
-    <h1 class={`section-headers ${lightMode && 'light-mode-header-borders'} fa-fade lang-toggle`}>
+    <h1 className={`section-headers ${lightMode && 'light-mode-header-borders'} fa-fade lang-toggle`}>
         {text}
     </h1>
   )
