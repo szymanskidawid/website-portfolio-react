@@ -2,6 +2,7 @@ import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
+import { pageScroll } from '../helpers/pageScroll';
 
 const Header = () => {
   const { lightMode, setLightMode } = useContext(LightModeContext);
@@ -21,17 +22,17 @@ const Header = () => {
           <div className="top-button-icon">
             <i className="fa-solid fa-arrow-up fa-bounce"></i>
           </div>
-          <div className="top-button-text lang-toggle" data-key="topBtn">
+          <div className="top-button-text lang-toggle" onClick={() => pageScroll.topScroll()} data-key="topBtn">
             Top
           </div>
         </div>
-        <div className="all-btns about-button lang-toggle" data-key="aboutBtn">
+        <div className="all-btns about-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("about")} data-key="aboutBtn">
           About
         </div>
-        <div className="all-btns resume-button lang-toggle" data-key="resumeBtn">
+        <div className="all-btns resume-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("resume")} data-key="resumeBtn">
           Resume
         </div>
-        <div className="all-btns projects-button lang-toggle" data-key="projectsBtn">
+        <div className="all-btns projects-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("projects")} data-key="projectsBtn">
           Projects
         </div>
         <div className="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
