@@ -1,6 +1,7 @@
 import SectionHeaders from "./SectionHeaders"
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
+import { websiteLinks } from '../helpers/websiteLinks'
 
 import Project1_GIF_1 from '../../assets/gifs/project1-1.gif'
 import Project1_GIF_2 from '../../assets/gifs/project1-2.gif'
@@ -21,7 +22,7 @@ const ProjectsSection = ( {className} ) => {
             <h2 className="project-header text-underline lang-toggle" data-key="project1Header">
               Portfolio Website
             </h2>
-            <div id="repo-btn-1" className={`all-btns project-repo-button ${lightMode && "light-mode-cv-link"}`}>
+            <div id="repo-btn-1" className={`all-btns project-repo-button ${lightMode && "light-mode-cv-link"}`} onClick={() => websiteLinks("repoProject1")}>
               <i className="repo-icon fa-brands fa-github fa-xl"></i>
               <p className="project-repo-button-text">GitHub Repo</p>
             </div>
