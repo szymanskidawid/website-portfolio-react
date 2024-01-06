@@ -4,16 +4,18 @@ import { LightModeContext } from '../contexts/LightModeContext';
 
 import cvENG from '../../assets/cv-files/Dawid-Szymanski-CV-ENG.pdf'
 import cvPL from '../../assets/cv-files/Dawid-Szymanski-CV-PL.pdf'
+import { LanguageContext } from "../contexts/LanguageContext";
 
 const ResumeSection = () => {
   const { lightMode } = useContext(LightModeContext);
+  const { language } = useContext(LanguageContext);
 
   return (
     <>
       <SectionHeaders text="Resume" />
       <section className={`section resume-section ${lightMode && "light-mode-sections"}`}>
       <div id="resume-eng" className="resume-section-left">
-        <object className="resume-cv-container" data={cvENG} type="application/pdf" aria-label="CV" />
+        <object className="resume-cv-container" data={language === "english" ? cvENG : cvPL} type="application/pdf" aria-label="CV" />
         <a href={cvENG} style={{textDecoration: "none"}} target="_blank">
           <p className={`resume-cv-link ${lightMode && "light-mode-cv-link"}`}>
             Click to open my CV in a new window (English version).
