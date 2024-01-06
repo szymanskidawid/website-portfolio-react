@@ -14,7 +14,7 @@ function App() {
     } else {
       document.body.classList.remove("light-mode-body");
     }
-  })
+  }, [])
 
   return (
     <div className='App'>
