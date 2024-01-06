@@ -2,7 +2,7 @@ import SectionHeaders from "./SectionHeaders"
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
 
-const AboutSection = ( {className} ) => {
+const AboutSection = () => {
   const { lightMode } = useContext(LightModeContext);
 
   return (

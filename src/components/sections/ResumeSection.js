@@ -5,7 +5,7 @@ import { LightModeContext } from '../contexts/LightModeContext';
 import cvENG from '../../assets/cv-files/Dawid-Szymanski-CV-ENG.pdf'
 import cvPL from '../../assets/cv-files/Dawid-Szymanski-CV-PL.pdf'
 
-const ResumeSection = ( {className} ) => {
+const ResumeSection = () => {
   const { lightMode } = useContext(LightModeContext);
 
   return (
