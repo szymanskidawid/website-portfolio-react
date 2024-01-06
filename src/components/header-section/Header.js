@@ -3,6 +3,7 @@ import FlagPL from '../../assets/pictures/flag-pl.png'
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
 import { pageScroll } from '../helpers/pageScroll';
+import { toggleLanguage } from '../helpers/toggleLanguage';
 
 const Header = () => {
   const { lightMode, setLightMode } = useContext(LightModeContext);
@@ -10,10 +11,10 @@ const Header = () => {
   return (
     <header className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div className="language-buttons">
-        <div className="all-btns english-language-button">
+        <div className="all-btns english-language-button" onClick={() => toggleLanguage("english")}>
           <img src={FlagUK} className="fa-beat" />
         </div>
-        <div className="all-btns polish-language-button inactive">
+        <div className="all-btns polish-language-button inactive" onClick={() => toggleLanguage("polish")}>
           <img src={FlagPL} className="fa-beat" />
         </div>  
       </div>

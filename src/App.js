@@ -6,6 +6,7 @@ import ContextProviders from './components/contexts/ContextProviders';
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
+  const [language, setLanguage] = useState("english");
 
   useEffect(() => {
     if (lightMode) {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className='App'>
-      <ContextProviders {...{ lightMode, setLightMode }}>
+      <ContextProviders {...{ lightMode, setLightMode, language, setLanguage }}>
         <Header />
         <Sections />
         <Footer />
