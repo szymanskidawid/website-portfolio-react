@@ -18,12 +18,12 @@ const ProjectsSection = () => {
     <>
       <SectionHeaders text="Projects" />
       <section className={`section projects-section ${lightMode && "light-mode-sections"}`}>
-        <div id="project-1" className="project">
+        <div className="project">
           <div className="project-top-section">
             <h2 className="project-header text-underline lang-toggle" data-key="project1Header">
               {currentProject.header}
             </h2>
-            <div id="repo-btn-1" className={`all-btns project-repo-button ${lightMode && "light-mode-cv-link"}`} onClick={() => websiteLinks("repoProject1")}>
+            <div className={`all-btns project-repo-button ${lightMode && "light-mode-cv-link"}`} onClick={() => websiteLinks(selectedProject)}>
               <i className="repo-icon fa-brands fa-github fa-xl"></i>
               <p className="project-repo-button-text">GitHub Repo</p>
             </div>

@@ -1,4 +1,4 @@
-const toggleLanguage = (language) => {
+export const toggleLanguage = (language) => {
   fetch('languages.json').then(response => response.json()).then(data => {
     const elements = document.getElementsByClassName('lang-toggle');
 
@@ -17,5 +17,3 @@ const toggleLanguage = (language) => {
   })
   .catch(error => console.error('Error fetching language data:', error));
 }
-
-export default toggleLanguage;

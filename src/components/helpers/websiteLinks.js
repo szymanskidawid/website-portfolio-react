@@ -9,10 +9,10 @@ export const websiteLinks = ( button ) => {
         case "linkedin":
             window.open("https://www.linkedin.com/in/szymanskidawid", "_blank");
             break;
-        case "repoProject1":
+        case "project1":
             window.open("https://github.com/szymanskidawid/WebsitePortfolio", "_blank");
             break;
-        case "repoProject2":
+        case "project2":
             window.open("https://github.com/szymanskidawid/EmployeeManagement", "_blank");
             break;
         default:
