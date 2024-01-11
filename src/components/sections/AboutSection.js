@@ -1,7 +1,7 @@
-import SectionHeaders from "./SectionHeaders"
 import { useContext } from 'react'
-import { LightModeContext } from '../contexts/LightModeContext';
 import { useTranslate } from 'react-polyglot';
+import { LightModeContext } from '../contexts/LightModeContext';
+import SectionHeaders from "./SectionHeaders"
 
 const AboutSection = () => {
   const { lightMode } = useContext(LightModeContext);
@@ -11,15 +11,9 @@ const AboutSection = () => {
     <>
       <SectionHeaders text={t('aboutMeHeader')} />
       <section className={`section about-section ${lightMode && "light-mode-sections"}`}>
-        <p className="about-section-text lang-toggle" data-key="aboutMeText1">
-          {t('aboutMeText1')}
-        </p>
-        <p className="about-section-text lang-toggle" data-key="aboutMeText2">
-          {t('aboutMeText2')}
-        </p>
-        <p className="about-section-text lang-toggle" data-key="aboutMeText3">
-          {t('aboutMeText3')}
-        </p>
+        <p className="about-section-text" dangerouslySetInnerHTML={{ __html: t('aboutMeText1') }}/>
+        <p className="about-section-text" dangerouslySetInnerHTML={{ __html: t('aboutMeText2') }}/>
+        <p className="about-section-text" dangerouslySetInnerHTML={{ __html: t('aboutMeText3') }}/>
       </section>
     </>
   )

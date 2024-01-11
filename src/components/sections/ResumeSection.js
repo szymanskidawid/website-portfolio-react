@@ -1,11 +1,10 @@
-import SectionHeaders from "./SectionHeaders"
-import { useContext } from 'react'
-import { LightModeContext } from '../contexts/LightModeContext';
-
 import cvENG from '../../assets/cv-files/Dawid-Szymanski-CV-ENG.pdf'
 import cvPL from '../../assets/cv-files/Dawid-Szymanski-CV-PL.pdf'
-import { LocaleContext } from "../contexts/LocaleContext";
+import { useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
+import { LightModeContext } from '../contexts/LightModeContext';
+import { LocaleContext } from "../contexts/LocaleContext";
+import SectionHeaders from "./SectionHeaders"
 
 const ResumeSection = () => {
   const { lightMode } = useContext(LightModeContext);
@@ -25,10 +24,10 @@ const ResumeSection = () => {
         </a>
       </div>   
       <div className="resume-section-right">
-        <p className="resume-section-text lang-toggle" data-key="resumeTextRight1">
+        <p className="resume-section-text">
           {t('resumeTextRight1')}
         </p>
-        <h4 className="text-underline lang-toggle" data-key="resumeListHeader1">
+        <h4 className="text-underline">
           {t('resumeListHeader1')}
         </h4>
         <ul className="resume-section-lists">
@@ -49,7 +48,7 @@ const ResumeSection = () => {
           <li>Windows Forms</li>
           <li>C++</li>
         </ul>
-        <h4 className="text-underline lang-toggle" data-key="resumeListHeader2">
+        <h4 className="text-underline">
           {t('resumeListHeader2')}
         </h4>
         <ul className="resume-section-lists">

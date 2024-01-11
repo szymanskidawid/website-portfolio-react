@@ -1,6 +1,6 @@
 import WelcomePicture from '../../assets/pictures/myPicture.png'
-import { websiteLinks } from '../helpers/websiteLinks'
 import { useTranslate } from 'react-polyglot';
+import { websiteLinks } from '../helpers/websiteLinks'
 
 const WelcomeSection = () => {
   const t = useTranslate();
@@ -8,9 +8,7 @@ const WelcomeSection = () => {
   return (
     <section className="welcome-section">
       <div className="welcome-section-text">
-        <p className="welcome-section-text-top lang-toggle" data-key="welcomeText">
-          {t('welcomeText')}
-        </p>
+        <p className="welcome-section-text-top" dangerouslySetInnerHTML={{ __html: t('welcomeText') }}/>
         <p className="welcome-section-text-bottom">
           Full Stack Developer
         </p>

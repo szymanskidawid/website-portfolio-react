@@ -1,12 +1,11 @@
+import englishMessages from './components/languages/english.json';
+import polishMessages from './components/languages/polish.json';
+import { useState, useEffect } from 'react';
+import { I18n } from 'react-polyglot';
 import Header from './components/header-section/Header'
 import Sections from './components/sections/Sections';
 import Footer from './components/Footer';
-import { useState, useEffect } from 'react';
 import ContextProviders from './components/contexts/ContextProviders';
-import { I18n } from 'react-polyglot';
-
-import englishMessages from './components/languages/english.json';
-import polishMessages from './components/languages/polish.json';
 
 function App() {
   const [lightMode, setLightMode] = useState(false);

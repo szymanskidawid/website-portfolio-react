@@ -23,7 +23,6 @@
     "project1Label1": "Dark/Light Mode",
     "project1Label2": "Two Languages",
     "project1Label3": "Hyperlink Buttons",
-    "project1Tech": "Technologies used for this Project:",
     "project2Header": "Employee Management App",
     "project2Text1": "This application is a display of my Full Stack Development skills and it is a basic version of employee management software that could be used in HR department.",
     "project2Text2": "It allows user to create/edit/delete data that automatically updates in a SQL Database. There is also an option to view the main Employee table inside Windows Forms that updates all records with a press of Refresh Button and allows the user to search any specific phrases inside the table.",
@@ -31,7 +30,7 @@
     "project2Label1": "Updade Entries / Refresh Main Table",
     "project2Label2": "Delete an Entry",
     "project2Label3": "Works with a SQL Database",
-    "project2Tech": "Technologies used for this Project:",
+    "projectTech": "Technologies used for this Project:",
     "projectHoverInfo": "Hover over / click GIFs for zoom.",
     "projectBtn1":"Portfolio Website",
     "projectBtn2":"Employee Management App"

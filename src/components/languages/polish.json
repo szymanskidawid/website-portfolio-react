@@ -23,7 +23,6 @@
     "project1Label1": "Tryb Ciemny/Jasny",
     "project1Label2": "Dwa Języki",
     "project1Label3": "Przyciski Hiperłączy",
-    "project1Tech": "Technologie wykorzystane w tym Projekcie:",
     "project2Header": "Aplikacja do Zarządzania Pracownikami",
     "project2Text1": "Ta aplikacja jest przykładem moich umiejętności Full Stack Development i jest podstawową wersją oprogramowania do zarządzania pracownikami, które mogłoby być używane w dziale HR.",
     "project2Text2": "Umożliwia użytkownikowi tworzenie/edycję/usuwanie danych, które automatycznie aktualizują się w bazie danych SQL. Istnieje również opcja wyświetlenia głównej tabeli pracowników w Windows Forms, która aktualizuje wszystkie dane po naciśnięciu przycisku Refresh i pozwala użytkownikowi wyszukiwać określone frazy w tabeli.",
@@ -32,6 +31,7 @@
     "project2Label2": "Usuń wpis",
     "project2Label3": "Działa z bazą danych SQL",
     "project2Tech": "Technologie wykorzystane w tym Projekcie:",
+    "projectTech": "Technologie wykorzystane w tym Projekcie:",
     "projectHoverInfo": "Najedź kursorem / kliknij GIFy aby powiększyć.",
     "projectBtn1":"Strona Portfolio",
     "projectBtn2":"Aplikacja do Zarządzania Pracownikami"
