@@ -3,18 +3,21 @@ import FlagPL from '../../assets/pictures/flag-pl.png'
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
 import { pageScroll } from '../helpers/pageScroll';
-import { toggleLanguage } from '../helpers/toggleLanguage';
+import { LocaleContext } from '../contexts/LocaleContext';
+import { useTranslate } from 'react-polyglot';
 
 const Header = () => {
   const { lightMode, setLightMode } = useContext(LightModeContext);
+  const { setLocale } = useContext(LocaleContext);
+  const t = useTranslate();
 
   return (
     <header className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div className="language-buttons">
-        <div className="all-btns english-language-button" onClick={() => toggleLanguage("english")}>
+        <div className="all-btns english-language-button" onClick={() => setLocale("english")}>
           <img src={FlagUK} className="fa-beat" />
         </div>
-        <div className="all-btns polish-language-button inactive" onClick={() => toggleLanguage("polish")}>
+        <div className="all-btns polish-language-button inactive" onClick={() => setLocale("polish")}>
           <img src={FlagPL} className="fa-beat" />
         </div>  
       </div>
@@ -24,17 +27,17 @@ const Header = () => {
             <i className="fa-solid fa-arrow-up fa-bounce"></i>
           </div>
           <div className="top-button-text lang-toggle" onClick={() => pageScroll.topScroll()} data-key="topBtn">
-            Top
+            {t('topBtn')}
           </div>
         </div>
         <div className="all-btns about-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("about")} data-key="aboutBtn">
-          About
+          {t('aboutBtn')}
         </div>
         <div className="all-btns resume-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("resume")} data-key="resumeBtn">
-          Resume
+          {t('resumeBtn')}
         </div>
         <div className="all-btns projects-button lang-toggle" onClick={() => pageScroll.navigationButtonsScroll("projects")} data-key="projectsBtn">
-          Projects
+          {t('projectsBtn')}
         </div>
         <div className="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
           <i className="icon-change fa fa-sun fa-beat"></i>

@@ -12,8 +12,6 @@ const ProjectsSection = () => {
   const projects = Projects;
   const currentProject = projects[selectedProject];
 
-  console.log({currentProject});
-
   return (
     <>
       <SectionHeaders text="Projects" />
@@ -29,7 +27,7 @@ const ProjectsSection = () => {
             </div>
           </div>
           <div className="project-text-section">
-            <p className="lang-toggle" data-key="project1Text1">
+            <p data-key="project1Text1">
               {currentProject.text1}
             </p>
             <p className="project-paragraphs lang-toggle" data-key="project1Text2">

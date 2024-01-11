@@ -4,18 +4,20 @@ import { LightModeContext } from '../contexts/LightModeContext';
 
 import cvENG from '../../assets/cv-files/Dawid-Szymanski-CV-ENG.pdf'
 import cvPL from '../../assets/cv-files/Dawid-Szymanski-CV-PL.pdf'
-import { LanguageContext } from "../contexts/LanguageContext";
+import { LocaleContext } from "../contexts/LocaleContext";
+import { useTranslate } from 'react-polyglot';
 
 const ResumeSection = () => {
   const { lightMode } = useContext(LightModeContext);
-  const { language } = useContext(LanguageContext);
+  const { locale } = useContext(LocaleContext);
+  const t = useTranslate();
 
   return (
     <>
-      <SectionHeaders text="Resume" />
+      <SectionHeaders text={t('resumeHeader')} />
       <section className={`section resume-section ${lightMode && "light-mode-sections"}`}>
       <div id="resume-eng" className="resume-section-left">
-        <object className="resume-cv-container" data={language === "english" ? cvENG : cvPL} type="application/pdf" aria-label="CV" />
+        <object className="resume-cv-container" data={locale === "english" ? cvENG : cvPL} type="application/pdf" aria-label="CV" />
         <a href={cvENG} style={{textDecoration: "none"}} target="_blank">
           <p className={`resume-cv-link ${lightMode && "light-mode-cv-link"}`}>
             Click to open my CV in a new window (English version).
@@ -24,10 +26,10 @@ const ResumeSection = () => {
       </div>   
       <div className="resume-section-right">
         <p className="resume-section-text lang-toggle" data-key="resumeTextRight1">
-          Throughout my programming journey I have accumulated knowledge of using various frameworks, languages and libraries:
+          {t('resumeTextRight1')}
         </p>
         <h4 className="text-underline lang-toggle" data-key="resumeListHeader1">
-          Web Development
+          {t('resumeListHeader1')}
         </h4>
         <ul className="resume-section-lists">
           <li>HTML</li>
@@ -35,9 +37,9 @@ const ResumeSection = () => {
           <li>JavaScript</li>
           <li>React.js</li>
           <li>JSON</li>
-          <li className="lang-toggle" data-key="resumeTextList1">SASS (basics)</li>
-          <li className="lang-toggle" data-key="resumeTextList2">jQuery (basics)</li>
-          <li className="lang-toggle" data-key="resumeTextList3">Bootstrap (basics)</li>
+          <li>{t('resumeTextList1')}</li>
+          <li>{t('resumeTextList2')}</li>
+          <li>{t('resumeTextList3')}</li>
         </ul>
         <h4 className="text-underline">
           .NET Framework
@@ -48,7 +50,7 @@ const ResumeSection = () => {
           <li>C++</li>
         </ul>
         <h4 className="text-underline lang-toggle" data-key="resumeListHeader2">
-          Databases
+          {t('resumeListHeader2')}
         </h4>
         <ul className="resume-section-lists">
           <li>SQL</li>

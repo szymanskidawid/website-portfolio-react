@@ -1,12 +1,15 @@
 import WelcomePicture from '../../assets/pictures/myPicture.png'
 import { websiteLinks } from '../helpers/websiteLinks'
+import { useTranslate } from 'react-polyglot';
 
 const WelcomeSection = () => {
+  const t = useTranslate();
+
   return (
     <section className="welcome-section">
       <div className="welcome-section-text">
         <p className="welcome-section-text-top lang-toggle" data-key="welcomeText">
-          Hi, I am <span className="text-highlights">Dawid Szymański</span>
+          {t('welcomeText')}
         </p>
         <p className="welcome-section-text-bottom">
           Full Stack Developer
