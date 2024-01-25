@@ -15,6 +15,9 @@ export const websiteLinks = ( button ) => {
         case "project2":
             window.open("https://github.com/szymanskidawid/EmployeeManagement", "_blank");
             break;
+        case "project3":
+            window.open("https://github.com/szymanskidawid/e-commerce-store", "_blank");
+            break;
         default:
             break;
     }
