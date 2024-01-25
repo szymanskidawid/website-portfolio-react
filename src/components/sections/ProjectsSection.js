@@ -74,17 +74,23 @@ const ProjectsSection = () => {
           </div>
         </div>
         <div className="project-buttons">
-          <div className="all-btns project-button-1" onClick={() => setSelectedProject("project1")}>
+          <div className="all-btns project-button" onClick={() => setSelectedProject("project1")}>
             <div className="project-button-icon">
               <i className="fa-solid fa-globe fa-2xl"></i>
             </div>
             <h5 className="project-button-text">Portfolio Website</h5>
           </div>
-          <div className="all-btns project-button-2" onClick={() => setSelectedProject("project2")}>
+          <div className="all-btns project-button" onClick={() => setSelectedProject("project2")}>
             <div className="project-button-icon">
               <i className="fa-solid fa-database fa-2xl"></i>
             </div>
             <h5 className="project-button-text">Employee Management App</h5>
+          </div>
+          <div className="all-btns project-button" onClick={() => setSelectedProject("project3")}>
+            <div className="project-button-icon">
+              <i className="fa-solid fa-sack-dollar fa-2xl"></i>
+            </div>
+            <h5 className="project-button-text">E-Commerce Store</h5>
           </div>          
         </div>
       </section>

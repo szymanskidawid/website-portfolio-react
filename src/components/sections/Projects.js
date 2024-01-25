@@ -4,6 +4,9 @@ import Project1_GIF_3 from '../../assets/gifs/project1-3.gif'
 import Project2_GIF_1 from '../../assets/gifs/project2-1.gif'
 import Project2_GIF_2 from '../../assets/gifs/project2-2.gif'
 import Project2_GIF_3 from '../../assets/gifs/project2-3.gif'
+import Project3_GIF_1 from '../../assets/gifs/project1-1.gif'
+import Project3_GIF_2 from '../../assets/gifs/project1-2.gif'
+import Project3_GIF_3 from '../../assets/gifs/project1-3.gif'
 import { useState } from "react"
 import { useTranslate } from 'react-polyglot';
 
@@ -59,7 +62,32 @@ const Projects = () => {
                 }
                 ],
             technologies: "C# Windows Forms SQL"
-        }
+        },
+
+        project3: {
+            header: t('project3Header'),
+            text1: t('project3Text1'),
+            text2: t('project3Text2'),
+            text3: t('project3Text3'),
+            gifs: [
+                {
+                    src: Project3_GIF_1,
+                    alt: 'Project 3 GIF-1',
+                    label: t('project3Label1'),
+                },
+                {
+                    src: Project3_GIF_2,
+                    alt: 'Project 3 GIF-2',
+                    label: t('project3Label2'),
+                },
+                {
+                    src: Project3_GIF_3,
+                    alt: 'Project 3 GIF-3',
+                    label: t('project3Label3'),
+                }
+            ],
+            technologies: "REACT.JS EXPRESS.JS MONGOOSE"
+        },
     };
     return projects;
 };

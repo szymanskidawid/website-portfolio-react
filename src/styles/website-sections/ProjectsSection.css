@@ -133,8 +133,7 @@
     text-align: center;
   }
   
-  .project-button-1,
-  .project-button-2 {
+  .project-button {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -146,8 +145,7 @@
     padding: 0.2em;
   }
   
-  .project-button-1:hover,
-  .project-button-2:hover {
+  .project-button:hover {
     color: var(--color-purple);
     border-color: var(--color-purple);
   }
