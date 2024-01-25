@@ -6,7 +6,8 @@ import './styles/website-sections/Sections.css'
 import './styles/website-sections/WelcomeSection.css'
 import './styles/website-sections/AboutSection.css'
 import './styles/website-sections/ResumeSection.css'
-import './styles/website-sections/ProjectsSection.css'
+import './styles/website-sections/projects-section/ProjectsSection.css'
+import './styles/website-sections/projects-section/ProjectSelectionButton.css'
 import './styles/Footer.css'
 import './index.css';
 import App from './App';

@@ -5,6 +5,7 @@ import { ProjectContext } from '../../contexts/ProjectContext';
 import { websiteLinks } from '../../helpers/websiteLinks'
 import SectionHeaders from "../SectionHeaders"
 import Projects from "./Projects";
+import ProjectSelectionButton from './ProjectSelectionButton';
 
 const ProjectsSection = () => {
   const { lightMode } = useContext(LightModeContext);
@@ -73,25 +74,10 @@ const ProjectsSection = () => {
             </div> 
           </div>
         </div>
-        <div className="project-buttons">
-          <div className="all-btns project-button" onClick={() => setSelectedProject("project1")}>
-            <div className="project-button-icon">
-              <i className="fa-solid fa-globe fa-2xl"></i>
-            </div>
-            <h5 className="project-button-text">Portfolio Website</h5>
-          </div>
-          <div className="all-btns project-button" onClick={() => setSelectedProject("project2")}>
-            <div className="project-button-icon">
-              <i className="fa-solid fa-database fa-2xl"></i>
-            </div>
-            <h5 className="project-button-text">Employee Management App</h5>
-          </div>
-          <div className="all-btns project-button" onClick={() => setSelectedProject("project3")}>
-            <div className="project-button-icon">
-              <i className="fa-solid fa-sack-dollar fa-2xl"></i>
-            </div>
-            <h5 className="project-button-text">E-Commerce Store</h5>
-          </div>          
+        <div className="project-selection-buttons-container">
+          <ProjectSelectionButton text={"Portfolio Website"} icon={"fa-globe"} onClick={() => setSelectedProject("project1")}/>
+          <ProjectSelectionButton text={"Employee Management App"} icon={"fa-database"} onClick={() => setSelectedProject("project2")}/>
+          <ProjectSelectionButton text={"E-Commerce Store"} icon={"fa-sack-dollar"} onClick={() => setSelectedProject("project3")}/>         
         </div>
       </section>
     </>

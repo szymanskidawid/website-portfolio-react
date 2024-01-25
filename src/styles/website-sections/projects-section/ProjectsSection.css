@@ -126,36 +126,11 @@
     color: var(--color-yellow);
   }
   
-  .project-buttons {
+  .project-selection-buttons-container {
     flex: 1;
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  
-  .project-button {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: color 0.15s;
-    border: 2px solid transparent;
-    border-radius: 2px;
-    margin: 0.5em;
-    padding: 0.2em;
-  }
-  
-  .project-button:hover {
-    color: var(--color-purple);
-    border-color: var(--color-purple);
-  }
-  
-  .project-button-icon {
-    margin-bottom: 1em;
-  }
-  
-  .project-button-text {
-    font-size: 1em;
   }
   
   /* Responsive Web Design Code */
