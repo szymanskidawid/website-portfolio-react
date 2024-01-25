@@ -1,24 +1,25 @@
 import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
 
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { useTranslate } from 'react-polyglot';
 import { LightModeContext } from '../contexts/LightModeContext';
 import { pageScroll } from '../helpers/pageScroll';
 import { LocaleContext } from '../contexts/LocaleContext';
 
 const Header = () => {
+  const [active, setActive] = useState(false);
   const { lightMode, setLightMode } = useContext(LightModeContext);
-  const { setLocale } = useContext(LocaleContext);
+  const { locale, setLocale } = useContext(LocaleContext);
   const t = useTranslate();
 
   return (
     <header className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div className="language-buttons">
-        <div className="all-btns english-language-button" onClick={() => setLocale("english")}>
+        <div className={`all-btns english-language-button ${locale === "polish" && "inactive"}`} onClick={() => setLocale("english")}>
           <img src={FlagUK} className="fa-beat" />
         </div>
-        <div className="all-btns polish-language-button inactive" onClick={() => setLocale("polish")}>
+        <div className={`all-btns polish-language-button ${locale === "english" && "inactive"}`} onClick={() => setLocale("polish")}>
           <img src={FlagPL} className="fa-beat" />
         </div>  
       </div>
