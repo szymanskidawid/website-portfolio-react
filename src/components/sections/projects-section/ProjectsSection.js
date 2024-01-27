@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
 import { LightModeContext } from '../../contexts/LightModeContext';
-import { ProjectContext } from '../../contexts/ProjectContext';
 import { websiteLinks } from '../../helpers/websiteLinks'
 import SectionHeaders from "../SectionHeaders"
 import Projects from "./Projects";

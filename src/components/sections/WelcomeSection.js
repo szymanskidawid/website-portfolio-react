@@ -25,7 +25,7 @@ const WelcomeSection = () => {
         </div>
       </div>
       <div className="welcome-section-image">
-        <img src={WelcomePicture} />
+        <img src={WelcomePicture} alt="welcomePicture"/>
       </div>
     </section>
   )

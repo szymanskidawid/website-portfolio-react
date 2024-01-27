@@ -1,7 +1,7 @@
 import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
 
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
 import { LightModeContext } from '../contexts/LightModeContext';
 import { pageScroll } from '../helpers/pageScroll';
