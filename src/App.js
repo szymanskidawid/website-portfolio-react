@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     const result = messagesByLocale[locale];
     setMessages(result);
-  }, [locale]);
+  }, [locale, messagesByLocale]);
 
   return (
     <div className='App'>
