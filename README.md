@@ -7,8 +7,8 @@ This is a new version of my personal website portfolio created for Front-End pra
 Project is still being worked on.
 
 # GIFs highlighting some functionalities (click for zoom)
-<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/f1d364dc-684c-42b2-bbc3-aadb747bd0b0" alt="project_GIF_1" width="250">
-<img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/0006c3d9-f817-443e-a71b-3dc76e57b0af" alt="project_GIF_2" width="250">
+<img src="https://github.com/szymanskidawid/website-portfolio-react/assets/17786383/9aa294bc-d80d-4569-887b-eadab21a5d31" alt="project_GIF_1" width="250">
+<img src="https://github.com/szymanskidawid/website-portfolio-react/assets/17786383/5eb2f749-648a-4f5b-86ee-96ba89b419fc" alt="project_GIF_2" width="250">
 <img src="https://github.com/szymanskidawid/WebsitePortfolio/assets/17786383/af07ba8e-6407-4547-bee4-461764af2278" alt="project_GIF_3" width="250">
 
 # Reflection
