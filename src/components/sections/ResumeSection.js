@@ -34,6 +34,7 @@ const ResumeSection = () => {
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+          <li>Node.js + Express.js</li>
           <li>React.js</li>
           <li>JSON</li>
           <li>{t('resumeTextList1')}</li>
@@ -53,6 +54,7 @@ const ResumeSection = () => {
         </h4>
         <ul className="resume-section-lists">
           <li>SQL</li>
+          <li>MongoDB (Mongoose)</li>
         </ul>
       </div>
     </section>
