@@ -4,9 +4,9 @@ import Project1_GIF_3 from '../../../assets/gifs/project1-3.gif'
 import Project2_GIF_1 from '../../../assets/gifs/project2-1.gif'
 import Project2_GIF_2 from '../../../assets/gifs/project2-2.gif'
 import Project2_GIF_3 from '../../../assets/gifs/project2-3.gif'
-import Project3_GIF_1 from '../../../assets/gifs/project1-1.gif'
-import Project3_GIF_2 from '../../../assets/gifs/project1-2.gif'
-import Project3_GIF_3 from '../../../assets/gifs/project1-3.gif'
+import Project3_GIF_1 from '../../../assets/gifs/project3-1.gif'
+import Project3_GIF_2 from '../../../assets/gifs/project3-2.gif'
+import Project3_GIF_3 from '../../../assets/gifs/project3-3.gif'
 import { useState } from "react"
 import { useTranslate } from 'react-polyglot';
 
@@ -36,7 +36,7 @@ const Projects = () => {
                     label: t('project1Label3'),
                 }
             ],
-            technologies: "HTML CSS JavaScript JSON"
+            technologies: "REACT.JS CSS JSON"
         },
     
         project2: {
