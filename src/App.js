@@ -20,15 +20,15 @@ function App() {
     }
   }, [lightMode])
 
-  const messagesByLocale = {
-    english: englishMessages,
-    polish: polishMessages,
-  };
-  
   useEffect(() => {
+    const messagesByLocale = {
+      english: englishMessages,
+      polish: polishMessages,
+    };
+
     const result = messagesByLocale[locale];
     setMessages(result);
-  }, [locale, messagesByLocale]);
+  }, [locale]);
 
   return (
     <div className='App'>
