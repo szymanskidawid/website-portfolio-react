@@ -17,7 +17,7 @@ const ResumeSection = () => {
       <section className={`section resume-section ${lightMode && "light-mode-sections"}`}>
       <div id="resume-eng" className="resume-section-left">
         <object className="resume-cv-container" data={locale === "english" ? cvENG : cvPL} type="application/pdf" aria-label="CV" />
-        <a href={cvENG} style={{textDecoration: "none"}} target="_blank">
+        <a href={cvENG} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
           <p className={`resume-cv-link ${lightMode && "light-mode-cv-link"}`}>
             Click to open my CV in a new window (English version).
           </p>

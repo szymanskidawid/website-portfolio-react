@@ -8,7 +8,6 @@ import { pageScroll } from '../helpers/pageScroll';
 import { LocaleContext } from '../contexts/LocaleContext';
 
 const Header = () => {
-  const [active, setActive] = useState(false);
   const { lightMode, setLightMode } = useContext(LightModeContext);
   const { locale, setLocale } = useContext(LocaleContext);
   const t = useTranslate();
@@ -17,10 +16,10 @@ const Header = () => {
     <header className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div className="language-buttons">
         <div className={`all-btns english-language-button ${locale === "polish" && "inactive"}`} onClick={() => setLocale("english")}>
-          <img src={FlagUK} className="fa-beat" />
+          <img src={FlagUK} className="fa-beat" alt="FlagUK"/>
         </div>
         <div className={`all-btns polish-language-button ${locale === "english" && "inactive"}`} onClick={() => setLocale("polish")}>
-          <img src={FlagPL} className="fa-beat" />
+          <img src={FlagPL} className="fa-beat" alt="FlagPL"/>
         </div>  
       </div>
       <nav className="nav-bar-right">
