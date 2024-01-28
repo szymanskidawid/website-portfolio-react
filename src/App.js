@@ -2,10 +2,8 @@ import englishMessages from './components/languages/english.json';
 import polishMessages from './components/languages/polish.json';
 import { useState, useEffect } from 'react';
 import { I18n } from 'react-polyglot';
-import Header from './components/header-section/Header'
-import Sections from './components/sections/Sections';
-import Footer from './components/Footer';
 import ContextProviders from './components/contexts/ContextProviders';
+import { Router } from './components/helpers/Router';
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
@@ -34,9 +32,7 @@ function App() {
     <div className='App'>
       <I18n locale={locale} messages={messages}>
         <ContextProviders {...{ lightMode, setLightMode, locale, setLocale }}>
-          <Header />
-          <Sections />
-          <Footer />
+          <Router />
         </ContextProviders>
       </I18n> 
     </div>
