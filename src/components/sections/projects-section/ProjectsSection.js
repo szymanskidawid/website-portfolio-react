@@ -2,6 +2,7 @@ import { useState, useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
 import { LightModeContext } from '../../contexts/LightModeContext';
 import { websiteLinks } from '../../helpers/websiteLinks'
+import { openECommerceStore } from '../../helpers/openECommerceStore';
 import SectionHeaders from "../SectionHeaders"
 import Projects from "./Projects";
 import ProjectSelectionButton from './ProjectSelectionButton';
@@ -76,7 +77,7 @@ const ProjectsSection = () => {
         <div className="project-selection-buttons-container">
           <ProjectSelectionButton text={"Portfolio Website"} icon={"fa-globe"} onClick={() => setSelectedProject("project1")}/>
           <ProjectSelectionButton text={"Employee Management App"} icon={"fa-database"} onClick={() => setSelectedProject("project2")}/>
-          <ProjectSelectionButton text={"E-Commerce Store"} icon={"fa-sack-dollar"} onClick={() => setSelectedProject("project3")}/>         
+          <ProjectSelectionButton text={"E-Commerce Store"} icon={"fa-sack-dollar"} onClick={() => openECommerceStore()}/>         
         </div>
       </section>
     </>
