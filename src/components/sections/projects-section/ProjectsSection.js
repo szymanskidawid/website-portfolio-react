@@ -74,9 +74,9 @@ const ProjectsSection = () => {
           </div>
         </div>
         <div className="project-selection-buttons-container">
-          <ProjectSelectionButton text={"Portfolio Website"} icon={"fa-globe"} onClick={() => setSelectedProject("project1")}/>
-          <ProjectSelectionButton text={"Employee Management App"} icon={"fa-database"} onClick={() => setSelectedProject("project2")}/>
-          <ProjectSelectionButton text={"E-Commerce Store"} icon={"fa-sack-dollar"} onClick={() => setSelectedProject("project3")}/>         
+          <ProjectSelectionButton text={t('projectBtn1')} icon={"fa-globe"} onClick={() => setSelectedProject("project1")}/>
+          <ProjectSelectionButton text={t('projectBtn2')} icon={"fa-database"} onClick={() => setSelectedProject("project2")}/>
+          <ProjectSelectionButton text={t('projectBtn3')} icon={"fa-sack-dollar"} onClick={() => setSelectedProject("project3")}/>         
         </div>
       </section>
     </>
