@@ -31,15 +31,12 @@ const ResumeSection = () => {
           {t('resumeListHeader1')}
         </h4>
         <ul className="resume-section-lists">
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>HTML + CSS</li>
           <li>JavaScript</li>
-          <li>Node.js + Express.js</li>
           <li>React.js</li>
+          <li>Node.js + Express.js</li>
           <li>JSON</li>
           <li>{t('resumeTextList1')}</li>
-          <li>{t('resumeTextList2')}</li>
-          <li>{t('resumeTextList3')}</li>
         </ul>
         <h4 className="text-underline">
           .NET Framework
@@ -47,13 +44,12 @@ const ResumeSection = () => {
         <ul className="resume-section-lists">
           <li>C#</li>
           <li>Windows Forms</li>
-          <li>C++</li>
         </ul>
         <h4 className="text-underline">
           {t('resumeListHeader2')}
         </h4>
         <ul className="resume-section-lists">
-          <li>SQL</li>
+          <li>SQL (MySQL)</li>
           <li>MongoDB (Mongoose)</li>
         </ul>
       </div>
