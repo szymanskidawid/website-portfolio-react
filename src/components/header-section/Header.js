@@ -40,7 +40,7 @@ const Header = () => {
           {t('projectsBtn')}
         </div>
         <div className="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
-          <i className="fa fa-sun fa-beat"></i>
+          <i className={`fa ${lightMode ? "fa-moon" : "fa-sun"} fa-beat`}></i>
         </div>
       </nav>  
     </header>
