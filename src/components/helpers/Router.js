@@ -28,12 +28,14 @@ export const Router = () => {
       element: (
         <AppECommerce />
       ),
+    },
 
+    {
       path: '/e-commerce-store/basket',
       element: (
         <AppECommerce />
       ),
-    },
+    }
   ]);
 
   return <RouterProvider router={router} />;
