@@ -3,7 +3,7 @@ import ContextProviders from './contexts/ContextProviders';
 import { fetchAllProducts } from './helpers/fetchAllProducts';
 import Router from './helpers/Router';
 
-function App() {
+function AppECommerce() {
   const [darkMode, setDarkMode] = useState(false);
   const [allProducts, setAllProducts] = useState(null);
   const [basket, setBasket] = useState({});
@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="AppECommerce">
       <ContextProviders {...{ darkMode, setDarkMode, basket, setBasket, allProducts, setAllProducts }}>
         <Router totalPrice={totalPrice} />
       </ContextProviders>
@@ -41,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppECommerce;
