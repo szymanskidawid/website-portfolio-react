@@ -18,6 +18,8 @@ export const websiteLinks = ( button ) => {
         case "project3":
             window.open("https://github.com/szymanskidawid/e-commerce-store", "_blank");
             break;
+        case "e-commerce-store":
+            window.open("https://dsz-e-commerce-store.netlify.app");
         default:
             break;
     }

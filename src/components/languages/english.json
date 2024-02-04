@@ -31,7 +31,7 @@
     "project3Header": "E-Commerce Store",
     "project3Text1": "This is my online store created using my newly learned Full Stack skills with interactive Front-End menu system and a Back-End stock system.",
     "project3Text2": "I wanted to practice my React.js skills to create a fast, component based website and Moongoose library in order to create a MongoDB databse that will hold data about all products and their stock amount. I have used quite a few libraries such as MaterialUI for many present objects, ContextAPI for state management and React Render for navigation between pages.",
-    "project3Text3": "Click here to visit my online store at dawidszymanski.dev/e-commerce-store.",
+    "project3Text3": "Click here to visit my online store.",
     "project3Label1": "Filter by categories.",
     "project3Label2": "Functional stock system",
     "project3Label3": "Dark/Light Mode",

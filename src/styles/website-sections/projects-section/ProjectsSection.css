@@ -49,6 +49,11 @@
     display: flex;
     margin-top: 0.5em;
   }
+
+  .project-paragraphs-link {
+    color: var(--color-yellow);
+    cursor: pointer;
+  }
   
   .project-gifs-section {
     display: flex;

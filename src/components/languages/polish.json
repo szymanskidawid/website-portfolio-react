@@ -31,7 +31,7 @@
     "project3Header": "Sklep Internetowy",
     "project3Text1": "Oto mój sklep internetowy stworzony przy użyciu nowo nabytych umiejętności Full Stack, z interaktywnym Front-End'owym systemem menu oraz Back-End'owym systemem magazynowym.",
     "project3Text2": "Chciałem doskonalić moje umiejętności w React.js, aby stworzyć szybką stronę opartą na komponentach, a także użyłem biblioteki Mongoose do utworzenia bazy danych MongoDB przechowującej informacje o wszystkich produktach i ich ilości w magazynie. Skorzystałem również z wielu bibliotek, takich jak MaterialUI do wielu prezentowanych obiektów, ContextAPI do zarządzania stanem aplikacji i React Render do nawigacji między stronami.",
-    "project3Text3": "Kliknij tutaj, aby odwiedzić mój sklep internetowy pod adresem dawidszymanski.dev/e-commerce-store.",
+    "project3Text3": "Kliknij tutaj, aby odwiedzić mój sklep internetowy.",
     "project3Label1": "Filtrowanie kategoriami",
     "project3Label2": "Funkcjonalny system magazynowy",
     "project3Label3": "Tryb Ciemny/Jasny.",
