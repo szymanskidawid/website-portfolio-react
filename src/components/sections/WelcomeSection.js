@@ -1,6 +1,6 @@
 import WelcomePicture from '../../assets/pictures/myPicture.png'
-import { useTranslate } from 'react-polyglot';
 import { websiteLinks } from '../helpers/websiteLinks'
+import { useTranslate } from 'react-polyglot';
 
 const WelcomeSection = () => {
   const t = useTranslate();
@@ -14,13 +14,13 @@ const WelcomeSection = () => {
         </p>
         <div className="welcome-section-contact">
           <div className="all-btns mail-button" onClick={() => websiteLinks("mail")}>
-            <i className="icon-mail fa-regular fa-envelope fa-2xl"></i>
+            <i className="fa-regular fa-envelope fa-2xl" />
           </div>   
           <div className="all-btns github-button" onClick={() => websiteLinks("github")}>
-            <i className="icon-github fa-brands fa-github fa-2xl"></i>
+            <i className="fa-brands fa-github fa-2xl" />
           </div>
           <div className="all-btns linkedin-button" onClick={() => websiteLinks("linkedin")}>
-            <i className="icon-linkedin fa-brands fa-linkedin fa-2xl"></i>
+            <i className="fa-brands fa-linkedin fa-2xl" />
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
-import { useState, useContext } from 'react'
-import { useTranslate } from 'react-polyglot';
-import { LightModeContext } from '../../contexts/LightModeContext';
-import { websiteLinks } from '../../helpers/websiteLinks'
 import SectionHeaders from "../SectionHeaders"
 import Projects from "./Projects";
 import ProjectSelectionButton from './ProjectSelectionButton';
+import { websiteLinks } from '../../helpers/websiteLinks'
+import { LightModeContext } from '../../contexts/LightModeContext';
+import { useState, useContext } from 'react'
+import { useTranslate } from 'react-polyglot';
 
 const ProjectsSection = () => {
   const { lightMode } = useContext(LightModeContext);
@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                 {t('projectTech')}
               </h3>
               <div className="project-technologies-text-container">
-                <p className="project-technologies-text">{currentProject.technologies}</p>
+                <p className="project-technologies-text" style={{ whiteSpace: 'pre-wrap' }}>{currentProject.technologies}</p>
               </div>
             </div>
             <div className={`project-zoom-info${lightMode && "light-mode-link"}`}>

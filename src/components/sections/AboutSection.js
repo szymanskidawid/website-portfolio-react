@@ -1,7 +1,8 @@
+import SectionHeaders from "./SectionHeaders"
 import { useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
 import { LightModeContext } from '../contexts/LightModeContext';
-import SectionHeaders from "./SectionHeaders"
+
 
 const AboutSection = () => {
   const { lightMode } = useContext(LightModeContext);

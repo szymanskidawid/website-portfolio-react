@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
-.light-mode-body {
+.light-mode-app {
   background-color: var(--color-white);
   color: var(--color-black);
   border-color: var(--color-black);

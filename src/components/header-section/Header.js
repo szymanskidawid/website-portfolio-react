@@ -1,11 +1,10 @@
 import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
-
-import { useContext } from 'react'
-import { useTranslate } from 'react-polyglot';
-import { LightModeContext } from '../contexts/LightModeContext';
 import { pageScroll } from '../helpers/pageScroll';
+import { useContext } from 'react'
+import { LightModeContext } from '../contexts/LightModeContext';
 import { LocaleContext } from '../contexts/LocaleContext';
+import { useTranslate } from 'react-polyglot';
 
 const Header = () => {
   const { lightMode, setLightMode } = useContext(LightModeContext);
@@ -41,7 +40,7 @@ const Header = () => {
           {t('projectsBtn')}
         </div>
         <div className="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
-          <i className="icon-change fa fa-sun fa-beat"></i>
+          <i className="fa fa-sun fa-beat"></i>
         </div>
       </nav>  
     </header>

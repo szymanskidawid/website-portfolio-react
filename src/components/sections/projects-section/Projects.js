@@ -35,7 +35,7 @@ const Projects = () => {
                     label: t('project1Label3'),
                 }
             ],
-            technologies: "REACT.JS CSS JSON"
+            technologies: "REACT.JS        CSS        JSON"
         },
     
         project2: {
@@ -60,7 +60,7 @@ const Projects = () => {
                     label: t('project2Label3'),
                 }
                 ],
-            technologies: "C# Windows Forms SQL"
+            technologies: "C#      Windows      Forms      SQL"
         },
 
         project3: {
@@ -85,7 +85,7 @@ const Projects = () => {
                     label: t('project3Label3'),
                 }
             ],
-            technologies: "REACT.JS EXPRESS.JS MONGOOSE"
+            technologies: "REACT.JS      EXPRESS.JS      MONGOOSE"
         },
     };
     return projects;
