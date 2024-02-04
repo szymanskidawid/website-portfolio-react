@@ -35,9 +35,13 @@ const ProjectsSection = () => {
             <p className="project-paragraphs">
               {currentProject.text2}
             </p>
-            <p className="project-paragraphs">
-              {currentProject.text3}
-            </p>
+            {selectedProject === "project3" ? (
+              <a href="/e-commerce-store/">
+                <p className="project-paragraphs">{currentProject.text3}</p>
+              </a>
+            ) : (
+              <p className="project-paragraphs">{currentProject.text3}</p>
+            )}
           </div>
           <div className="project-gifs-section">
             <div className="project-gif">
