@@ -20,6 +20,7 @@ export const websiteLinks = ( button ) => {
             break;
         case "e-commerce-store":
             window.open("https://dsz-e-commerce-store.netlify.app");
+            break;
         default:
             break;
     }
