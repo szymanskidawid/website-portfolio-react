@@ -3,6 +3,8 @@ import MainButton from '../buttons/MainButton';
 import { Alert } from '@mui/material';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../contexts/DarkModeContext';
+import { ProjectImages } from '../../helpers/ProjectImages';
+
 
 const ProductCard = ({ name, price, stock, isInBasket, addToBasket }) => {
   const { darkMode } = useContext(DarkModeContext);
@@ -22,7 +24,7 @@ const ProductCard = ({ name, price, stock, isInBasket, addToBasket }) => {
     <div className={`product-card-container product-card-container-${darkMode ? 'dark' : 'light'}-theme`}>
       <div className="product-card-name">{name}</div>
       <div className="product-card-picture">
-        <img src={`../images/${name}.jpg`} alt={name} />
+        <img src={ProjectImages[name]} alt={name} />
       </div>
       <div className="product-card-bottom">
         <div className="product-card-price">{price.toFixed(2)} zł</div>

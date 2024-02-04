@@ -1,6 +1,8 @@
+import { ProjectImages } from "../../helpers/ProjectImages";
+
 const Logo = () => (
   <div className="website-logo">
-    <img src="../images/websiteLogo.jpg" alt="DawidDeals" />
+    <img src={ProjectImages["Logo"]} alt="DawidDeals" />
   </div>
 );
 
