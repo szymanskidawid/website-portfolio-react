@@ -2,7 +2,7 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Header from '../header-section/Header'
 import Sections from '../sections/Sections';
 import Footer from '../Footer';
-import App from '../../e-commerce-store/src/App';
+import AppECommerce from '../../e-commerce-store/src/AppECommerce';
 
 export const Router = () => {
 
@@ -11,17 +11,27 @@ export const Router = () => {
       path: '/',
       element: (
         <>
-            <Header />
-            <Sections />
-            <Footer />
+          <Header />
+          <Sections />
+          <Footer />
         </> 
       ),
     },
 
     {
-      path: '/e-commerce-store',
+      path: '/e-commerce-store/',
+      element: <Navigate to="/e-commerce-store/products" />,
+    },
+
+    {
+      path: '/e-commerce-store/products',
       element: (
-        <App />
+        <AppECommerce />
+      ),
+
+      path: '/e-commerce-store/basket',
+      element: (
+        <AppECommerce />
       ),
     },
   ]);
