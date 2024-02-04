@@ -24,18 +24,9 @@ export const Router = () => {
     },
 
     {
-      path: '/e-commerce-store/products',
-      element: (
-        <AppECommerce />
-      ),
+      path: '/e-commerce-store/*',
+      element: <AppECommerce />,
     },
-
-    {
-      path: '/e-commerce-store/basket',
-      element: (
-        <AppECommerce />
-      ),
-    }
   ]);
 
   return <RouterProvider router={router} />;
