@@ -6,7 +6,7 @@ export const pageScroll = {
       });
   },
 
-  navigationButtonsScroll: (button) => {
+  navigationButtonsScroll: (name) => {
     const CalculateNavBarHeight = () => {
       return document.querySelector(".nav-bar").offsetHeight;
     };
@@ -17,7 +17,7 @@ export const pageScroll = {
   
     const navBarHeight = CalculateNavBarHeight();
     const sectionHeaderHeight = CalculateSectionHeaderHeight();
-    const position = document.querySelector(`.${button}-section`);
+    const position = document.querySelector(`.${name}-section`);
   
     if (position) {
       window.scrollTo({
