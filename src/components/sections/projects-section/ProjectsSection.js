@@ -9,16 +9,27 @@ import { useTranslate } from 'react-polyglot';
 const ProjectsSection = () => {
   const { lightMode } = useContext(LightModeContext);
   const [ selectedProject, setSelectedProject ] = useState("project1");
+  const [ fadeOut, setFadeOut ] = useState(false);
+
   const t = useTranslate();
 
   const projects = Projects();
   const currentProject = projects[selectedProject];
 
+  const projectChange = (project) => {
+    setFadeOut(true);
+
+    setTimeout(() => {
+      setFadeOut(false);
+      setSelectedProject(project);
+    }, 500);
+  }
+
   return (
     <>
       <SectionHeaders text="Projects" />
       <section className={`section projects-section ${lightMode && "light-mode-sections"}`}>
-        <div className="project">
+        <div className={`project  ${fadeOut ? "fade-out" : "fade-in"}`}>
           <div className="project-top-section">
             <h2 className="project-header text-underline">
               {currentProject.header}
@@ -76,9 +87,9 @@ const ProjectsSection = () => {
           </div>
         </div>
         <div className="project-selection-buttons-container">
-          <ProjectSelectionButton text={t('projectBtn1')} icon={"fa-globe"} onClick={() => setSelectedProject("project1")}/>
-          <ProjectSelectionButton text={t('projectBtn2')} icon={"fa-database"} onClick={() => setSelectedProject("project2")}/>
-          <ProjectSelectionButton text={t('projectBtn3')} icon={"fa-sack-dollar"} onClick={() => setSelectedProject("project3")}/>         
+          <ProjectSelectionButton text={t('projectBtn1')} icon={"fa-globe"} onClick={() => projectChange("project1")}/>
+          <ProjectSelectionButton text={t('projectBtn2')} icon={"fa-database"} onClick={() => projectChange("project2")}/>
+          <ProjectSelectionButton text={t('projectBtn3')} icon={"fa-sack-dollar"} onClick={() => projectChange("project3")}/>         
         </div>
       </section>
     </>
