@@ -11,7 +11,7 @@ import { I18n } from 'react-polyglot';
 function App() {
   const [lightMode, setLightMode] = useState(false);
   const [locale, setLocale] = useState("english");
-  const [messages, setMessages] = useState({});
+  const [messages, setMessages] = useState(englishMessages);
 
   useEffect(() => {
     const messagesByLocale = {
