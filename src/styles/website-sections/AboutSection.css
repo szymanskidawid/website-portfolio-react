@@ -12,8 +12,14 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 640px) {
-.about-section-text {
-    font-size: 5vw;
+@media (max-width: 1200px) {
+    .about-section-text {
+        font-size: 4vw;
+    }
 }
+
+@media (max-width: 640px) {
+    .about-section-text {
+        font-size: 5vw;
+    }
 }
