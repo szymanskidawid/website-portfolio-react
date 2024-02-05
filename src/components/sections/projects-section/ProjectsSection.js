@@ -81,7 +81,7 @@ const ProjectsSection = () => {
                 <p className="project-technologies-text" style={{ whiteSpace: 'pre-wrap' }}>{currentProject.technologies}</p>
               </div>
             </div>
-            <div className={`project-zoom-info${lightMode && "light-mode-link"}`}>
+            <div className={`project-zoom-info ${lightMode && "light-mode-link"}`}>
               {t('projectHoverInfo')}
             </div> 
           </div>
