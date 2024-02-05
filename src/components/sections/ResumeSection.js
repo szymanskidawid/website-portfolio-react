@@ -50,7 +50,7 @@ const ResumeSection = () => {
           </h4>
           <ul className="resume-section-lists">
             <li>SQL (MySQL)</li>
-            <li>MongoDB (Mongoose)</li>
+            <li>Mongoose (MongoDB)</li>
           </ul>
         </div>
       </section>

@@ -35,7 +35,7 @@ const Projects = () => {
                     label: t('project1Label3'),
                 }
             ],
-            technologies: "React.JS (+ ContextAPI, React-Polyglot)        CSS        JSON"
+            technologies: "React.js (+ ContextAPI, React-Polyglot)        CSS        JSON"
         },
     
         project2: {
