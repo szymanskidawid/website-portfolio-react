@@ -7,7 +7,7 @@
   }
   
 .project {
-  flex: 5;
+  flex: 7;
   display: flex;
   flex-direction: column;
   margin: 0.5em;
@@ -21,7 +21,7 @@
 
 .project-header {
   flex: 1;
-  font-size: 1.8vw;
+  font-size: 30px;
   margin-bottom: 0.5em;
   font-weight: 500;
 }
@@ -41,7 +41,7 @@
 
 .project-text-section {
   text-align: justify;
-  font-size: 1.2vw;
+  font-size: 20px;
   margin-bottom: 0.5em;
 }
 
@@ -57,7 +57,7 @@
 
 .project-gifs-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
@@ -182,6 +182,7 @@
 }
 
 /* Used for Fade In/Out function */
+
 .fade-out {
   animation-name: fade-out-animation;
   animation-duration: 0.5s;

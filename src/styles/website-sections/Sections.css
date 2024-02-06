@@ -11,7 +11,7 @@
   .about-section,
   .resume-section,
   .projects-section {
-    min-height: calc(100vh - 5.5vw - 6vw);
+    min-height: calc(100vh - 5.5vw - 6.5vw);
     background-color: var(--color-dark-gray);
     border-radius: 10px;
   }
@@ -24,14 +24,4 @@
     font-weight: 500;
     border-top: 0.5vw solid var(--color-yellow);
     border-bottom: 0.5vw solid var(--color-yellow);
-  }
-  
-  /* Responsive Web Design Code */
-  
-  @media (max-width: 640px){
-    .about-section,
-    .resume-section,
-    .projects-section {
-      min-height: 90vh;
-    }
   }
