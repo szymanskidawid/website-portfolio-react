@@ -34,7 +34,7 @@ const ProjectsSection = () => {
             <h2 className="project-header text-underline">
               {currentProject.header}
             </h2>
-            <div className={`all-btns project-repo-button ${lightMode && "light-mode-link"}`} onClick={() => websiteLinks(selectedProject)}>
+            <div className={`all-btns project-repo-button ${lightMode && "light-mode-special-text"}`} onClick={() => websiteLinks(selectedProject)}>
               <i className="repo-icon fa-brands fa-github fa-xl"></i>
               <p className="project-repo-button-text">GitHub Repo</p>
             </div>
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
               {currentProject.text2}
             </p>
             {selectedProject === "project3" ? (
-              <p className={`project-paragraphs-link ${lightMode && "light-mode-link"}`} onClick={() => websiteLinks("e-commerce-store")}>{currentProject.text3}</p>
+              <p className={`project-paragraphs-link ${lightMode && "light-mode-special-text"}`} onClick={() => websiteLinks("e-commerce-store")}>{currentProject.text3}</p>
             ) : (
               <p className="project-paragraphs">{currentProject.text3}</p>
             )}
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
                 <p className="project-technologies-text" style={{ whiteSpace: 'pre-wrap' }}>{currentProject.technologies}</p>
               </div>
             </div>
-            <div className={`project-zoom-info ${lightMode && "light-mode-link"}`}>
+            <div className={`project-zoom-info ${lightMode && "light-mode-special-text"}`}>
               {t('projectHoverInfo')}
             </div> 
           </div>

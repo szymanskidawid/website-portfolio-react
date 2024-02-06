@@ -47,7 +47,7 @@
   
   /* Responsive Web Design Code */
   
-  @media (max-width: 640px) {
+  @media (max-width: 1000px) {
     .welcome-section {
       display: flex;
       flex-flow: column-reverse;
@@ -56,9 +56,22 @@
     .welcome-section-text {
       justify-content: flex-start;
     }
+
+    .welcome-section-text-top {
+      font-size: 7vw;
+    }
+    
+    .welcome-section-text-bottom {
+      font-size: 6vw;
+    }
   
     .welcome-section-image img {
+      max-width: 60%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .welcome-section-image img {
       max-width: 80%;
-      height: auto;
     }
   }
