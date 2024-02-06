@@ -35,7 +35,7 @@ const Projects = () => {
                     label: t('project1Label3'),
                 }
             ],
-            technologies: "React.js (+ ContextAPI, React-Polyglot)        CSS        JSON"
+            technologies: "React.js        CSS        JSON"
         },
     
         project2: {
@@ -85,7 +85,7 @@ const Projects = () => {
                     label: t('project3Label3'),
                 }
             ],
-            technologies: "React.js (+ ContextAPI, React-Render, MaterialUI)      Node.js(+ EXPRESS.js)      Mongoose (MongoDB)"
+            technologies: "React.js      Node.js(+ EXPRESS.js)      Mongoose (MongoDB)"
         },
     };
     return projects;
