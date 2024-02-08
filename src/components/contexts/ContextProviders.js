@@ -1,13 +1,10 @@
 import { LightModeContext } from './LightModeContext';
 import { LocaleContext } from './LocaleContext';
-import { ProjectContext } from './ProjectContext';
 
-const ContextProviders = ({ children, lightMode, setLightMode, selectedProject, setSelectedProject, locale, setLocale }) => (
+const ContextProviders = ({ children, lightMode, setLightMode, locale, setLocale }) => (
   <LightModeContext.Provider value={{ lightMode, setLightMode }}>
     <LocaleContext.Provider value={{ locale, setLocale }}>
-      <ProjectContext.Provider value={{ selectedProject, setSelectedProject }}>
-        {children}
-      </ProjectContext.Provider>
+      {children}
     </LocaleContext.Provider>
   </LightModeContext.Provider>
 );
