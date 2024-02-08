@@ -1,6 +1,7 @@
 import WelcomePicture from '../../assets/pictures/myPicture.png'
 import { websiteLinks } from '../helpers/websiteLinks'
 import { useTranslate } from 'react-polyglot';
+import { htmlSanitizer } from '../helpers/htmlSanitizer';
 
 const WelcomeSection = () => {
   const t = useTranslate();
@@ -8,7 +9,7 @@ const WelcomeSection = () => {
   return (
     <section className="welcome-section">
       <div className="welcome-section-text">
-        <p className="welcome-section-text-top" dangerouslySetInnerHTML={{ __html: t('welcomeText') }}/>
+        <p className="welcome-section-text-top" dangerouslySetInnerHTML={{ __html: htmlSanitizer(t('welcomeText')) }} />
         <p className="welcome-section-text-bottom">
           Full Stack Developer
         </p>
