@@ -1,8 +1,6 @@
 .resume-section {
     display: flex;
     flex-direction: row;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .resume-section-left {

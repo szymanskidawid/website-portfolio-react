@@ -2,8 +2,6 @@
     display: grid;
     align-content: space-around;
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .about-section-text {

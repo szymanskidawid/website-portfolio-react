@@ -1,16 +1,16 @@
 .projects-section {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
   
 .project {
   flex: 7;
   display: flex;
   flex-direction: column;
-  margin: 0.5em;
+  margin: 0.5vw;
 }
 
 .project-top-section {
@@ -36,12 +36,12 @@
 
 .project-repo-button-text {
   font-size: 1.5vw;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 
 .project-text-section {
   text-align: justify;
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-bottom: 0.5em;
 }
 
@@ -58,8 +58,8 @@
 .project-gifs-section {
   display: flex;
   justify-content: space-around;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .project-gif {
@@ -140,29 +140,61 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) {
+  .projects-section {
+    flex-direction: column;
+  }
+
+  .project-selection-buttons-container {
+    flex-direction: row;
+  }
+
+  .project-gifs-section {
+    flex-wrap: wrap;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  
+  .project-gif {
+    height: 20vw;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 900px) {
   .project-header {
-    font-size: 2.5vw;
+    font-size: 22px;
   }
 
   .project-text-section,
   .project-technologies,
   .project-bottom-section,
   .project-zoom-info{
-    font-size: 2vw;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-header {
+    font-size: 18px;
+  }
+
+  .project-text-section,
+  .project-technologies,
+  .project-bottom-section,
+  .project-zoom-info{
+    font-size: 14px;
   }
 
   .repo-icon {
     font-size: 0.8em;
   }
 
-  .project-gifs-section {
-    flex-direction: column;
-  }
-
   .project-gif {
-    height: 30vw;
-    width: 45vw;
+    height: 25vw;
+    width: 38vw;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 1em;
   }
 
