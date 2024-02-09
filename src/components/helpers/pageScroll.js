@@ -21,7 +21,7 @@ export const pageScroll = {
   
     if (position) {
       window.scrollTo({
-        top: position.offsetTop - navBarHeight - sectionHeaderHeight - 25,
+        top: position.offsetTop - navBarHeight - sectionHeaderHeight,
         behavior: "smooth"
       });
     }
