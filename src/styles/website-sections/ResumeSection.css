@@ -1,12 +1,12 @@
 .resume-section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .resume-section-left {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin-top: 1em;
   flex: 1;
 }
 

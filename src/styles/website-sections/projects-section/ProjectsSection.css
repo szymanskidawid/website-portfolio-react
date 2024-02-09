@@ -1,15 +1,12 @@
 .projects-section {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
   text-align: left;
 }
   
 .project {
-  flex: 7;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 0.8fr 3.5fr 4fr 1fr;
   margin: 0.5vw;
 }
 
@@ -17,12 +14,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: green;
 }
 
 .project-header {
   flex: 1;
-  font-size: 30px;
-  margin-bottom: 0.5em;
+  font-size: 1.8vw;
+  margin-bottom: 0.5vw;
   font-weight: 500;
 }
 
@@ -40,9 +39,11 @@
 }
 
 .project-text-section {
+  flex: 6;
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   margin-bottom: 0.5em;
+  background-color: orange;
 }
 
 .project-paragraphs {
@@ -56,10 +57,13 @@
 }
 
 .project-gifs-section {
+  flex: 6;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+  background-color: aqua;
 }
 
 .project-gif {
@@ -99,15 +103,16 @@
 .project-bottom-section {
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
+  margin-top: 0.6em;
   font-size: 1vw;
+  background-color: purple;
 }
 
 .project-technologies {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 
 .project-technologies-header {
@@ -140,78 +145,124 @@
 
 /* Responsive Web Design Code */
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .projects-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
   }
 
   .project-selection-buttons-container {
     flex-direction: row;
   }
 
-  .project-gifs-section {
-    flex-wrap: wrap;
-    margin-left: 4vw;
-    margin-right: 4vw;
+  .project-header {
+    font-size: 2vw;
+  }
+  
+  .project-repo-button-text {
+    font-size: 1.5vw;
+  }
+  
+  .project-text-section {
+    font-size: 1.5vw;
   }
   
   .project-gif {
-    height: 20vw;
-    width: 30vw;
+    height: 15vw;
+    width: 22.5vw;
+  }
+  
+  .project-gif-label {
+    font-size: 1.2vw;
+  }
+  
+  .project-bottom-section {
+    font-size: 1.5vw;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .project-header {
-    font-size: 22px;
+    font-size: 2.5vw;
   }
-
-  .project-text-section,
-  .project-technologies,
-  .project-bottom-section,
-  .project-zoom-info{
-    font-size: 16px;
+  
+  .project-repo-button-text {
+    font-size: 2w;
+  }
+  
+  .project-text-section {
+    font-size: 2vw;
+  }
+  
+  .project-gif {
+    height: 18vw;
+    width: 27vw;
+  }
+  
+  .project-gif-label {
+    font-size: 1.2vw;
+  }
+  
+  .project-bottom-section {
+    font-size: 2vw;
   }
 }
 
-@media (max-width: 640px) {
-  .project-header {
-    font-size: 18px;
+@media (max-width: 800px) {
+  .projects-section {
+    grid-template-rows: 7fr 1fr;
   }
 
-  .project-text-section,
-  .project-technologies,
-  .project-bottom-section,
-  .project-zoom-info{
-    font-size: 14px;
+  .project {
+    grid-template-rows: 0.5fr 2.5fr 5.5fr 0.8fr;
   }
-
-  .repo-icon {
-    font-size: 0.8em;
+  
+  .project-gifs-section {
+    flex-wrap: wrap;
   }
 
   .project-gif {
     height: 25vw;
-    width: 38vw;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 1em;
+    width: 37.5vw;
   }
-
-  .project-bottom-section {
-    width: 100%;
-    flex-flow: column-reverse;
-  }
-
-  .project-zoom-info {
-    margin-left: 3em;
-    margin-bottom: 1em;
-  }
-
-  .project-buttons {
-    height: 40vh;
+  
+  .project-gif:hover {
+    transform: scale(1.7);
+    transform-origin: bottom;
   }
 }
+
+@media (max-width: 500px) {
+  .project {
+    grid-template-rows: 0.3fr 2fr 5fr 0.4fr;
+  }
+
+  .project-header {
+    font-size: 3vw;
+  }
+  
+  .project-repo-button-text {
+    font-size: 2.5w;
+  }
+  
+  .project-text-section {
+    font-size: 2.5vw;
+  }
+
+  .project-gifs-section {
+    flex-direction: column;
+  }
+
+  .project-gif {
+    height: 30vw;
+    width: 45vw;
+  }
+  
+  .project-gif-label {
+    font-size: 1.5vw;
+  }
+}
+
 
 /* Used for Fade In/Out function */
 

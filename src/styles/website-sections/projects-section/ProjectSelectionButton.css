@@ -20,5 +20,17 @@
   }
   
   .project-button-text {
-    font-size: 1em;
+    font-size: 1vw;
+  }
+
+  @media (max-width: 1000px) {
+    .project-button-text {
+      font-size: 1.5vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .project-button-text {
+      font-size: 2vw;
+    }
   }
