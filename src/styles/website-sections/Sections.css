@@ -9,7 +9,7 @@
     margin-right: 1vw;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
-    min-height: calc(100vh - 9vw);
+    min-height: calc(100vh - 12vw);
     background-color: var(--color-dark-gray);
     border-radius: 10px;
   }

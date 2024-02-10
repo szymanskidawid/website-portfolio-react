@@ -15,7 +15,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
 }
 
 .project-header {
@@ -43,7 +42,6 @@
   text-align: justify;
   font-size: 1.1vw;
   margin-bottom: 0.5em;
-  background-color: orange;
 }
 
 .project-paragraphs {
@@ -63,7 +61,6 @@
   align-items: center;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
-  background-color: aqua;
 }
 
 .project-gif {
@@ -105,7 +102,6 @@
   flex-direction: row;
   margin-top: 0.6em;
   font-size: 1vw;
-  background-color: purple;
 }
 
 .project-technologies {
@@ -204,7 +200,7 @@
   }
   
   .project-bottom-section {
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
 }
 
@@ -234,7 +230,7 @@
 
 @media (max-width: 500px) {
   .project {
-    grid-template-rows: 0.3fr 2fr 5fr 0.4fr;
+    grid-template-rows: 0.3fr 2.5fr 5fr 0.4fr;
   }
 
   .project-header {
