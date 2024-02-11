@@ -9,6 +9,7 @@
     "aboutMeText2": "Większość mojej młodości spędziłem za granicą - w <span class='text-highlights'>Wielkiej Brytanii</span>, gdzie nauczyłem się <span class='text-highlights'>języka angielskiego</span> i studiowałem tworzenie systemów komputerowych w <span class='text-highlights'>Uxbridge College</span>.",
     "aboutMeText3": "Ostatnie 12 miesięcy, w wolnym czasie, poświęciłem na naukę programowania i tworzenie własnych projektów, aby osiągnąć swój <span class='text-highlights'>cel kariery w programowaniu</span>.",
     "resumeHeader": "CV",
+    "resumeCVLink": "Kliknij, aby otworzyć moje CV w nowej oknie (wersja polska).",
     "resumeTextRight1": "Podczas mojej przygody z programowaniem zdobyłem wiedzę z różnych frameworków, języków i bibliotek, m.in.:",
     "resumeListHeader1": "Tworzenie Stron Internetowych",
     "resumeTextList1": "SASS, Bootstrap, jQuery (podstawy)",
