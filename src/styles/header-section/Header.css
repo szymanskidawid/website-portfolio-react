@@ -1,6 +1,6 @@
 .nav-bar {
     background-color: var(--color-black);
-    border-bottom: 0.5vw solid var(--color-white);
+    border-bottom: 0.2vw solid var(--color-white);
     color: var(--color-white);
     font-size: 1.5vw;
     font-weight: 700;
