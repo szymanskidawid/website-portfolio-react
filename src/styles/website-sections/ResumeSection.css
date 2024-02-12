@@ -52,6 +52,7 @@
 @media (max-width: 640px) {
   .resume-section {
     flex-direction: column;
+    text-align: center;
   }
 
   .resume-cv-container {
@@ -68,5 +69,19 @@
 
   .resume-section-lists {
     font-size: 2vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .resume-cv-link {
+    font-size: 3.5vw;
+  }
+
+  .resume-section-right {
+    font-size: 3.5vw;
+  }
+
+  .resume-section-lists {
+    font-size: 3vw;
   }
 }
