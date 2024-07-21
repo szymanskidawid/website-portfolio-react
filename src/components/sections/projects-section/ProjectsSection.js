@@ -5,9 +5,12 @@ import { websiteLinks } from '../../helpers/websiteLinks'
 import { LightModeContext } from '../../contexts/LightModeContext';
 import { useState, useContext } from 'react'
 import { useTranslate } from 'react-polyglot';
+import { RefsContext } from "../../contexts/RefsContext"
 
 const ProjectsSection = () => {
   const { lightMode } = useContext(LightModeContext);
+  const { projectsRef } = useContext(RefsContext);
+
   const [ selectedProject, setSelectedProject ] = useState("project1");
   const [ fadeOut, setFadeOut ] = useState(false);
 
@@ -28,7 +31,7 @@ const ProjectsSection = () => {
   return (
     <>
       <SectionHeaders text="Projects" />
-      <section className={`section projects-section ${lightMode && "light-mode-sections"}`}>
+      <section ref={projectsRef} className={`section projects-section ${lightMode && "light-mode-sections"}`}>
         <div className={`project  ${fadeOut ? "fade-out" : "fade-in"}`}>
           <div className="project-top-section">
             <h2 className="project-header text-underline">

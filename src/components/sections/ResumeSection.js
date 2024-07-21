@@ -5,16 +5,19 @@ import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
 import { LocaleContext } from "../contexts/LocaleContext";
 import { useTranslate } from 'react-polyglot';
+import { RefsContext } from "../contexts/RefsContext";
 
 const ResumeSection = () => {
   const { lightMode } = useContext(LightModeContext);
   const { locale } = useContext(LocaleContext);
+  const { resumeRef } = useContext(RefsContext);
+
   const t = useTranslate();
 
   return (
     <>
       <SectionHeaders text={t('resumeHeader')} />
-      <section className={`section resume-section ${lightMode && "light-mode-sections"}`}>
+    <section ref={resumeRef} className={`section resume-section ${lightMode && "light-mode-sections"}`}>
         <div id="resume-eng" className="resume-section-left">
           <object className="resume-cv-container" data={locale === "english" ? cvENG : cvPL} type="application/pdf" aria-label="CV" />
           <a href={cvENG} style={{textDecoration: "none"}} target="_blank" rel="noreferrer">

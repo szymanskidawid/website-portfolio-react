@@ -1,18 +1,34 @@
 import FlagUK from '../../assets/pictures/flag-uk.png'
 import FlagPL from '../../assets/pictures/flag-pl.png'
-import { pageScroll } from '../helpers/pageScroll';
 import { useContext } from 'react'
 import { LightModeContext } from '../contexts/LightModeContext';
 import { LocaleContext } from '../contexts/LocaleContext';
+import { RefsContext } from "../contexts/RefsContext";
 import { useTranslate } from 'react-polyglot';
 
 const Header = () => {
   const { lightMode, setLightMode } = useContext(LightModeContext);
   const { locale, setLocale } = useContext(LocaleContext);
+  const { navBarRef, sectionHeaderRef, aboutRef, resumeRef, projectsRef } = useContext(RefsContext);
+
   const t = useTranslate();
 
+  const topScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  const sectionScroll = (sectionRef) => {
+    window.scrollTo({
+      top: sectionRef.current.offsetTop - sectionHeaderRef.current.offsetHeight - navBarRef.current.offsetHeight,
+      behavior: "smooth"
+    });
+  }
+
   return (
-    <header className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
+    <header ref={navBarRef} className={`nav-bar ${lightMode && 'light-mode-nav-bar'}`}>
       <div className="language-buttons">
         <div className={`all-btns english-language-button ${locale === "polish" && "inactive"}`} onClick={() => setLocale("english")}>
           <img src={FlagUK} className="fa-beat" alt="FlagUK"/>
@@ -26,17 +42,17 @@ const Header = () => {
           <div className="top-button-icon">
             <i className="fa-solid fa-arrow-up fa-bounce"></i>
           </div>
-          <div className="top-button-text" onClick={() => pageScroll.topScroll()}>
+          <div className="top-button-text" onClick={() => topScroll()}>
             {t('topBtn')}
           </div>
         </div>
-        <div className="all-btns about-button" onClick={() => pageScroll.navigationButtonsScroll("about")}>
+        <div className="all-btns about-button" onClick={() => sectionScroll(aboutRef)}>
           {t('aboutBtn')}
         </div>
-        <div className="all-btns resume-button" onClick={() => pageScroll.navigationButtonsScroll("resume")}>
+        <div className="all-btns resume-button" onClick={() => sectionScroll(resumeRef)}>
           {t('resumeBtn')}
         </div>
-        <div className="all-btns projects-button" onClick={() => pageScroll.navigationButtonsScroll("projects")}>
+        <div className="all-btns projects-button" onClick={() => sectionScroll(projectsRef)}>
           {t('projectsBtn')}
         </div>
         <div className="all-btns color-mode-button" onClick={() => setLightMode(!lightMode)}>
